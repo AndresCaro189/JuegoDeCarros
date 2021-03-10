@@ -6,7 +6,7 @@ public class Conductor extends  Jugador {
     private final String nombre;
 
     public Conductor(String userName,String nombre) {
-        super(userName);
+        super(userName, nombre);
         this.nombre = Objects.requireNonNull(nombre) ;
     }
 

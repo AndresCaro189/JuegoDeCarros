@@ -2,10 +2,12 @@ package org.example.domain;
 
 public class Jugador {
     private final String userName;
+    private final String nombre;
     private Integer puntos;
 
-    public Jugador(String userName) {
+    public Jugador(String userName, String nombre) {
         this.userName = userName;
+        this.nombre = nombre;
         this.puntos = 0;
     }
 
@@ -19,5 +21,9 @@ public class Jugador {
 
     public Integer puntos() {
         return puntos;
+    }
+
+    public String nombre() {
+        return nombre;
     }
 }
